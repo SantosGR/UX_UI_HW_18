@@ -1,50 +1,118 @@
+.flexContainer{
+    display: flex;
+    flex-direction: row; 
+   
+font-size: small;
+padding: auto;
+margin: 80px;
 
-.inline-block {
-display: inline-block;
-vertical-align:top;
+
 }
+.DA{
+    text-align: center;
 
-.logo{
-text-align: justify ;
-width: 23%;
-padding: 1%;
+padding: 1px;
 }
+.DB{
 
+    padding: 1px;
+text-align: center;
+}
+.DD{
+text-align: center;
+    padding: 1px;
 
-.nav {
-    display: block;
-    background-color: lightgray;
-    width: 100%;
-    padding: 1%;
-    text-align: end;
-    margin:0 auto;
+}
+.D1{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+   
+}
+.myskills{
+    background-color:gray;
+    height: auto;
     
 }
-ul{
-    width: 50%;
-    margin-left: auto;
+#row{ background-color: lightgray;
+    border-radius: 10px;
+    height: 900px;
+
+margin: 70px;
+
 }
-#heroImg{
-    height: 600px;
-    padding: 25%;
-  
+
+
+.workGrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-content: center;
+    grid-gap: 40px;
+    padding: 60px;
+    grid-template-areas: 
+    "one two..."
+    "three four..."
+    "five six..."
+    ;
+   grid-template-rows: auto auto auto;
+margin: 70px;
+
+   
 }
-#content{
-    width: 500px;
-    margin:0 auto;
-}
-footer{
-    display: block;
+.Pro1{ grid-area: one;
     background-color: lightgray;
-    padding: 1%;
-    width: 100%;
+text-align: center;}
+.Pro12{ grid-area: two;
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: center}
+.Pro2{grid-area: three;
+    background-color: lightgray;
+    text-align: center}
+.Pro13{grid-area: four;
+    background-color: lightgray;
+    border-radius: 10px;
 
+    text-align: center}
+.Pro3{grid-area: five;
+    background-color: lightgray;
+    text-align: center}
+.Pro14{grid-area: six;
+    background-color: lightgray;
+    border-radius: 10px;
+
+    text-align: center}
+
+
+.myWork{
+    background-color: gray;
+    padding: 80px;
 }
-footer ul{
-    display: inline-block;
-    vertical-align: top;
-    padding: 1%;
-    margin:0 auto;
+
+
+
+h3{ text-align: center;
+color: white;}
+h2{text-align: center;
+    color: white;
+}
+h1{ text-align: center;
 }
 
-
+@media only screen and (max-width: 600px) {
+   .flexContainer {flex-direction: column;}
+   .DA{width: 100%;}
+   .DB{ width: 100%;}
+   .DD{ width:100%;}
+   .D1{ width:100%;}
+   .myskills{width: 100%;}
+   #row{width: 100%;}
+   .workGrid{grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:  
+     "one two..."
+    "three four..."
+    "five six...";
+}
+   
+  }
